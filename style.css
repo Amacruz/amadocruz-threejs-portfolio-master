@@ -491,9 +491,9 @@ footer {
   .hero-main{
     bottom: 120px;
   }
-  .hero-second{
+  /* .hero-second{
     top: 160px;
-  }
+  }*/ 
   .hero-wrapper{
     width: calc(100% - 60px);
   }
@@ -503,9 +503,9 @@ footer {
   .hero-main-description{
     font-size: 18px;
   }
-  .hero-second-subheading{
+  /* .hero-second-subheading{
     font-size: 18px;
-  }
+  }*/
 
 }
 
