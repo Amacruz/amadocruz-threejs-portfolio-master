@@ -17,6 +17,6 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
-    "vercel": "^28.3.0"
+    "vercel": "^28.4.8"
   }
 }
