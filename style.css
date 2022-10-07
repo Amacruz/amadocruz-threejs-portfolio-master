@@ -409,12 +409,12 @@ svg{
   color: var(--color-text);
 }
 
-.hero-second{
+/* .hero-second{
   position: absolute;
   top: calc(50% - 120px);
   right: 0;
   color: var(--color-text);
-}
+} */
 
 .hero-main-title{
   font-size: 64px;
@@ -426,11 +426,11 @@ svg{
   color: var(--color-text);
 }
 
-.hero-second-subheading{
+/* .hero-second-subheading{
   font-size: 32px;
   text-transform: uppercase;
   color: var(--color-text);
-}
+} */
 
 
 /* Other colors override */
