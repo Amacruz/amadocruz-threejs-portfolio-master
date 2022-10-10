@@ -280,7 +280,7 @@ export default class Preloader extends EventEmitter {
                     },
                     ">-0.1"
                 )
-                /*.to(
+                .to(
                     this.roomChildren.amado.scale,
                     {
                         x: 1,
@@ -288,7 +288,7 @@ export default class Preloader extends EventEmitter {
                         z: 1,
                         ease: "back.out(2.2)",
                         duration: 0.5,
-                })*/
+                })
                 .to(this.roomChildren.computer.scale, {
                     x: 1,
                     y: 1,
