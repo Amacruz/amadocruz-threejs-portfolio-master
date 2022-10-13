@@ -289,6 +289,15 @@ export default class Preloader extends EventEmitter {
                         ease: "back.out(2.2)",
                         duration: 0.5,
                 })
+                .to(
+                    this.roomChildren.hero.scale,
+                    {
+                        x: 1,
+                        y: 1,
+                        z: 1,
+                        ease: "back.out(2.2)",
+                        duration: 0.5,
+                })
                 .to(this.roomChildren.computer.scale, {
                     x: 1,
                     y: 1,
