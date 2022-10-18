@@ -22,6 +22,7 @@ export default class Room {
     this.setModel()
     this.onMouseMove()
     this.setRoomGroup()
+    this.setAnimation()
   }
 
   setModel() {
@@ -158,6 +159,15 @@ export default class Room {
     this.scene.add(this.group)
   }
 
+  setAnimation() {
+    this.mixer = new THREE.AnimationMixer(this.actualRoom);
+    console.log(this.room);
+    this.action = this.mixer.clipAction(this.room.animations[9])
+    this.swim = this.mixer.clipAction(this.room.animations[10])
+    this.swim.play();
+    this.action.play();
+  }
+
   resize() {}
 
   update() {
@@ -168,5 +178,7 @@ export default class Room {
     )
 
     this.group.rotation.y = this.lerp.current
+
+    this.mixer.update(this.time.delta * 0.0009);
   }
 }
