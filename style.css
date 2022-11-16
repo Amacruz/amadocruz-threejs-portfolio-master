@@ -351,19 +351,6 @@ svg{
   color: var(--color-pink);
 }
 
-/* .styleOne,
-.styleTwo,
-.styleThree{
-  position: absolute;
-  display: block;
-  width: 100%;
-  max-width: 278px;
-  height: 60px;
-  border: 1px solid var(--color-pink);
-  transform-origin: left;
-  transform: skewY(-25deg);
-} */
-
 .styleOne{
   top: 0px;
 }
@@ -409,13 +396,6 @@ svg{
   color: var(--color-text);
 }
 
-/* .hero-second{
-  position: absolute;
-  top: calc(50% - 120px);
-  right: 0;
-  color: var(--color-text);
-} */
-
 .hero-main-title{
   font-size: 64px;
   color: var(--color-text);
@@ -425,13 +405,6 @@ svg{
   font-size: 18px;
   color: var(--color-text);
 }
-
-/* .hero-second-subheading{
-  font-size: 32px;
-  text-transform: uppercase;
-  color: var(--color-text);
-} */
-
 
 /* Other colors override */
 
