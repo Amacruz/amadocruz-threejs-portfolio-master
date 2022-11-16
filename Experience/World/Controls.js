@@ -201,31 +201,20 @@ export default class Controls {
                         scrub: 0.6,
                         invalidateOnRefresh: true,
                     },
-                })
-                    .to(
-                        this.room.scale,
-                        {
-                            x: 0.25,
-                            y: 0.25,
-                            z: 0.25,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.rectLight,
-                        {
-                            width: 0.3 * 3.4,
-                            height: 0.4 * 3.4,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.room.position,
-                        {
-                            x: 1.5,
-                        },
-                        "same"
-                    );
+                }).to(this.camera.orthographicCamera.position, {
+                    y: .6,
+                    x: -1.3,
+                    z: 1,  
+                },
+                "same"
+                )
+                .to(
+                    this.room.rotation,
+                    {
+                        y: 1 * Math.PI / 2,
+                    },
+                    "same"
+                );
 
                 // Third section -----------------------------------------
                 this.thirdMoveTimeline = new GSAP.timeline({
@@ -236,9 +225,19 @@ export default class Controls {
                         scrub: 0.6,
                         invalidateOnRefresh: true,
                     },
-                }).to(this.room.position, {
-                    z: -4.5,
-                });
+                }).to(this.camera.orthographicCamera.position, {
+                    y: .7,
+                    x: .8,
+                },
+                "same"
+                )
+                .to(
+                    this.room.rotation,
+                    {
+                        y: 1 * Math.PI / .79,
+                    },
+                    "same"
+                );
             },
 
             // all
