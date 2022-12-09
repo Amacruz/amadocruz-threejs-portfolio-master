@@ -485,6 +485,7 @@ footer {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  padding-top: 10px;
   position: relative;
   margin: auto;
 }
